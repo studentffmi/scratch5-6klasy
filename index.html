@@ -77,6 +77,10 @@
     .intro { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); align-items: start; column-gap: clamp(34px, 7vw, 100px); row-gap: 24px; }
     .intro-copy { max-width: 470px; }
     .intro-copy p { margin-top: 18px; color: var(--sage); font-size: 1.1rem; }
+    .lesson-photo { margin-top: clamp(18px, 2.8vw, 26px); overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--light); }
+    .lesson-photo img { width: 100%; height: auto; aspect-ratio: 5 / 4; object-fit: cover; object-position: 50% 42%; background: var(--fern); }
+    .lesson-photo figcaption { display: grid; gap: 2px; padding: 12px 15px 14px; color: var(--sage); font-size: .92rem; }
+    .lesson-photo figcaption strong { color: var(--ink); }
     .lesson-parts { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; counter-reset: lesson-stage; }
     .lesson-parts li { display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: start; gap: 13px; padding: 15px 0 16px; border-bottom: 1px solid var(--line); }
     .lesson-parts li::before { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--fern); color: var(--forest); font-size: .9rem; font-weight: 750; counter-increment: lesson-stage; content: counter(lesson-stage); }
@@ -220,6 +224,13 @@
       <div class="intro-copy">
         <h2 id="lesson-title">Коли урок уже завтра</h2>
         <p>Пояснення ще треба знайти, а вправи й практичну роботу — підготувати. У «Рудик і Scratch» достатньо обрати клас і тему, щоб почати урок. Ось як проходить заняття з нової теми.</p>
+        <figure class="lesson-photo">
+          <img src="assets/yuliia-scratch-in-class.webp" alt="Юлія Машкаринець біля інтерактивної дошки з відкритою грою «Рудик і Scratch»" width="920" height="1227" loading="lazy" decoding="async">
+          <figcaption>
+            <strong>Юлія Машкаринець, учителька інформатики</strong>
+            <span>Використовую «Рудик і Scratch» на своїх уроках.</span>
+          </figcaption>
+        </figure>
       </div>
       <ol class="lesson-parts" role="list">
         <li><div><h3>Пригадаймо</h3><p>Учні виконують три короткі завдання. Кожен бачить, скільки відповідей дав правильно з першої спроби й що варто повторити перед новою темою.</p></div></li>
